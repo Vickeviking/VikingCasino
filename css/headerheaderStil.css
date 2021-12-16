@@ -1,16 +1,19 @@
 
-  header {
+  .headerFlex {
  
     background-color: #5454c5;
     padding: 1em;
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
 
   }
 
+
   
   .rubrik{
+    
+    margin-left: 30%;
     color: #ffc759;
     text-align: center;
     display: flex;

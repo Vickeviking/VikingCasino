@@ -115,31 +115,31 @@ function emptyInputLogin($username, $pwd){
 
 }
 
-function loginUser($conn, $username, $pwd);{
+function loginUser($conn, $username, $pwd){
 
 $uidExists = uidExists($conn, $username, $username);
 
 if($uidExists == false){
 
-    header("Location: ../login.php?error=wronglogin")
+    header("Location: ../login.php?error=wronglogin");
     exit();
 
 }
 
-    $pwdHashed = $uidExists["usersPwd"]
+    $pwdHashed = $uidExists["usersPwd"];
     $checkPwd = password_verify($pwd, $pwdHashed);
 
     if($checkPwd === false) {
 
-        header("Location: ../login.php?error=wronglogin")
+        header("Location: ../login.php?error=wronglogin");
         exit();
     
 
     } else if ($checkPwd === true){
 
         session_start();
-        $_SESSION["userId"] = $uidExists["usersId"]
-        $_SESSION["useruid"] = $uidExists["usersUid"]
+        $_SESSION["userId"] = $uidExists["usersId"];
+        $_SESSION["useruid"] = $uidExists["usersUid"];
         header("Location: ../index.php?error=emptyinput"); //vart ska användaren hamna när hen loggat in
         exit();
     }

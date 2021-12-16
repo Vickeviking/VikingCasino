@@ -1,5 +1,5 @@
 <?php
-include_once 'php/header.php'
+include_once 'header.php'
 ?>
 
 
@@ -70,5 +70,5 @@ echo" <p>Användarnamnet är upptaget, vänligen välj ett annat!</p>";}
 
 
 <?php
-include_once 'php/footer.php'
+include_once 'footer.php'
 ?>

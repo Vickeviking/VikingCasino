@@ -50,7 +50,7 @@ Spela säkert och följ spelvärkets riktlinjer
 
 
     <?php
-include_once 'php/footer.php'
+include_once 'footer.php'
 ?>
 
 

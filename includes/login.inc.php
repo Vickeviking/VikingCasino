@@ -2,10 +2,10 @@
 
 if(isset($_POST["submit"])) {
 
-$username = $_POST["uid"]
-$pwd = $_POST["pwd"]
+$username = $_POST["uid"];
+$pwd = $_POST["pwd"];
 
-require_once 'dba.inc.php';
+require_once 'dbh.inc.php';
 require_once 'functions.inc.php';
 
 if(emptyInputLogin($username, $pwd) !== false){
@@ -17,6 +17,6 @@ if(emptyInputLogin($username, $pwd) !== false){
 loginUser($conn, $username, $pwd);
 }
 else{
-header("Location: ../login.php?error=emptyinput")
+header("Location: ../login.php?error=emptyinput");
 exit();
 }

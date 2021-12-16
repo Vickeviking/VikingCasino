@@ -1,5 +1,5 @@
 <?php
-include_once 'php/header.php'
+include_once 'header.php'
 ?>
 
 
@@ -26,12 +26,7 @@ include_once 'php/header.php'
   
   </form>
   
-<?php
-if ($_GET["error"] == "none"){
 
-  echo" <p>Du har skapat ett konto!</p>";
-  }
-?>
 
 <?php
 if(isset($_GET["error"])) {
@@ -57,5 +52,5 @@ echo" <p>Fel inloggningsupgifter!</p>";
 </div> 
 
 <?php
-include_once 'php/footer.php'
+include_once 'footer.php'
 ?>

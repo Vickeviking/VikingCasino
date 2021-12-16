@@ -5,17 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/headerStil.css" />
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="css/signup.css">
-    <link rel="stylesheet" href="css/indexStil.css" />
-    <link rel="stylesheet" href="headerheaderStil.css">
 
   </head>
   <body>
     
 
-  <header>
+  <header class="headerFlex">
 
         
        <h1 class="rubrik" >Viking Casino</h1>

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/headerStil.css" />
+    <link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="css/signup.css">
+
   </head>
   <body>
     <header>
@@ -15,7 +18,8 @@
 
         <div class="rubrik och logga">
  
-          <h1 class="rubrik">Viking Casino</h1>
+        <a href="index.php"> <h1 class="rubrik">Viking Casino</h1></a>
+         
          
         <img class="Logga" src="img/VikingLogga.gif" alt="Loggan" width="120">
        

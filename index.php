@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/indexStil.css" />
+    <link rel="stylesheet" href="footer.css">
   </head>
   <body>
     <header>
@@ -26,8 +27,8 @@
             <div class="loginKnappar">
              
       
-              <button class="slide_from_left">Login</button>
-              <button class="slide_from_left">Sign Up</button>
+            <button class="slide_from_left"> <a href="login.php">Login</a></button>
+              <button class="slide_from_left"> <a href="signup.php">Sign Up</a></button>
       
               
             </div>

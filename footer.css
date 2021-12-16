@@ -2,11 +2,7 @@ body {
     margin: 0;
     padding: 0;
    }
-  
-   footer{
-    position: fixed;
-    bottom: 0;
-   }
+
    .footer-distributed{
     background-color: #220E24;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -164,10 +160,7 @@ body {
     .footer-distributed .footer-center i{
     margin-left: 0;
     }
-    .main {
-    line-height: normal;
-    font-size: auto;
-    }
+  
     
    }
 

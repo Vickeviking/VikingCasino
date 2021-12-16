@@ -1,0 +1,24 @@
+
+  header {
+ 
+    background-color: #5454c5;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  
+  .rubrik{
+    color: #ffc759;
+    text-align: center;
+    display: flex;
+    align-items:center;
+  }
+
+  html { font-size: calc(1em + 1vw) }
+ 
+  body {
+    background-color: #342056;
+  }

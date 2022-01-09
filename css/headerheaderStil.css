@@ -1,7 +1,7 @@
 
   .headerFlex {
  
-    background-color: #5454c5;
+    background-color: 	#1F2833;
     padding: 1em;
     width: 100%;
     display: flex;
@@ -22,6 +22,21 @@
 
   html { font-size: calc(1em + 1vw) }
  
-  body {
-    background-color: #342056;
-  }
+h5 {
+font-size: 0.4em;
+color: #ffc759;
+}
+
+h4{
+
+font-size: 1em;
+color: #ffc759;
+}
+
+.stödlinje{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}

@@ -1,9 +1,9 @@
 
 
 <?php
-  
+    session_start();
   include_once 'headerheader.php';
-  session_start();
+
   
 ?>
 
@@ -17,8 +17,17 @@
         
         <ul style="list-style-type:none" class="navigation">
           <li><a href="index.php">Home</a></li>
-          <li><a href="discover.php">Om Oss</a></li>
-          <li><a href="spela.php">Spela</a></li>
+          <li><a href="omOss.php">Om Oss</a></li>
+          <li><a  <?php
+            if(isset($_SESSION["useruid"])){
+          
+            
+
+              echo"href='spela.php'";
+            } else{
+              echo "href='login.php'";
+              }
+       ?>>Spela</a></li>
         
 
    

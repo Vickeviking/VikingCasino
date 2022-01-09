@@ -8,17 +8,10 @@
   html { font-size: calc(1em + 1vw) }
  
   body {
-    background-color: #342056;
+    background-color: #1F2833;
   }
  
-  header {
  
-    background-color: #5454c5;
-    padding: 1em;
-    width: 100%;
-    
-
-  }
  
   .rubrikFlex{
 
@@ -67,15 +60,7 @@ button:hover {
 }
 
 
-header .stödlinje {
 
-display: flex;
-flex-direction: column;
-margin-top: 1.5em;
-color: #e1a71f;
-
-
-}
 
 header h3{
 
@@ -97,7 +82,7 @@ header h3 a:hover {
 
 }
 
-.tal {
+article {
 
 margin-top: 12vh;
 

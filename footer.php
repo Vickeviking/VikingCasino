@@ -3,7 +3,7 @@
  
  <div class="footer-left">
  
- <h3>VikingCasino</h3>
+ <h3>NordicViking</h3>
  
  <p class="footer-links">
  <a href="index.php">Hem</a>
@@ -17,7 +17,7 @@
  <a href="#">Kontakta oss</a>
  </p>
  
- <p class="footer-company-name">VikingCasino &copy; 2021</p>
+ <p class="footer-company-name">NordicViking &copy; 2021</p>
  </div>
  
  <div class="footer-center">

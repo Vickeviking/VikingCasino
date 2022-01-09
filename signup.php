@@ -3,6 +3,10 @@ include_once 'header.php'
 ?>
 
 
+<div class="macka">
+
+<img  class="brödEtt" src="img/cashen.gif" alt="pokerkort">
+
 <div class="slåIn">
 
 
@@ -64,6 +68,14 @@ echo" <p>Användarnamnet är upptaget, vänligen välj ett annat!</p>";}
 ?>
 
   </section> 
+
+
+  
+</div> 
+
+
+
+<img class="brödTvå" src="img/casinobilden.gif" alt="jackpot">
 
 </div> 
 

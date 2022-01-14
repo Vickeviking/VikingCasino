@@ -5,49 +5,50 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-background-color: black;
-
+body {
+  background-color: black;
 }
 
-.Wrapp{
-
-display: flex;
-justify-content: center;
-height: auto;
-align-items: center;
-background-color:black;
-margin-top: 1.5em;
-
-
+.Wrapp {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+  background-color: black;
+  margin-top: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-
-.rubrik{
-        color: #ffc759;
-        text-align: center;
-        display: flex;
-        align-items:center;
- }
-
-.navList{
-display: flex;
-justify-content: space-evenly;
-font-size: 1em;
-
+.navList {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+  background-color: black;
+  margin-top: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.navList a{
+.rubrik {
+  color: #ffc759;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
 
+.navList {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1em;
+}
+
+.navList a {
   color: white;
   text-decoration: none;
-
 }
 
-
-.navList a:hover{
-
+.navList a:hover {
   text-decoration: underline;
-  
-   }
-    
+}

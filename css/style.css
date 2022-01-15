@@ -18,6 +18,7 @@ body {
   margin-top: 1.5em;
   padding-left: 1em;
   padding-right: 1em;
+  font-size: 2em;
 }
 
 .navList {
@@ -25,10 +26,15 @@ body {
   justify-content: center;
   height: auto;
   align-items: center;
+  justify-content: space-evenly;
   background-color: black;
   margin-top: 1.5em;
-  padding-left: 1em;
-  padding-right: 1em;
+  margin-bottom: 1.5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  font-size: 1em;
+  background-color: #1f2833;
+  list-style: none;
 }
 
 .rubrik {
@@ -36,12 +42,6 @@ body {
   text-align: center;
   display: flex;
   align-items: center;
-}
-
-.navList {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 1em;
 }
 
 .navList a {

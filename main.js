@@ -1,5 +1,8 @@
 const express = require("express") 
 const app = express()  //app är ett variabel namn för express
+
+const PORT = process.env.PORT || 5000;
+
 const path = require('path')
 
 //skriv npx nodemon main.js för att få en server som updateras varje gång du refreshar sidan
@@ -28,8 +31,16 @@ function getWeather(req, res, next){
 metod, function weather måste alltså vara "färdigt vilket denm blir när next skrivs ut" */
 
 app.get("/", (req, res) => {
-    res.render("home")  //rendera home från start sidan av servern/ alltså "local300/"
+    res.render("index")  //rendera home från start sidan av servern/ alltså "local300/"
 })
+
+app.get('/login.ejs', (req, res) => {
+    res.render('login');
+   });
+
+   app.get('/index.ejs', (req, res) => {
+    res.render('index');
+   });
 
 app.get("/about", (req, res) => {
     
@@ -49,4 +60,4 @@ if(req.body.color.trim().toUpperCase() === "BLUE"){  //trimmar ner och ändrar s
 app.get("/result", (req, res) => {
 res.send("vad gör du här inne?")  //om man manuellt skulle försöka komma in på websidan möts man av detta medelande
 })
-app.listen(3000) //vilken local server jag kör på
+app.listen(PORT, console.log(`Server started on port ${PORT}`)) //vilken local server jag kör på

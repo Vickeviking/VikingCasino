@@ -1,164 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/logingridStyle.css" />
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/css/loginform.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="/css/loginform.css" />
+  </head>
+  <body>
     <div class="grid-container">
-        <div class="grid-itemRubrik">
-          <div class="Wrapp">
-            <div class="rubrik">
-              <h1>NordicViking</h1>
-            </div>
-            <a href="index.ejs"><img src="../img/VikingLogga.gif" alt="Logga" /></a>
+      <div class="grid-itemRubrik">
+        <div class="Wrapp">
+          <div class="rubrik">
+            <h1>NordicViking</h1>
           </div>
-        </div>
-        <div class="grid-itemNav">
-          <ul class="navList">
-            <li><a href="/">Home</a></li>
-  
-            <li><a href="">Spela</a></li>
-  
-            <li><a href="">Om oss</a></li>
-  
-            <li><a href="/users/login">Log in</a></li>
-  
-            <li><a href="/users/register">Sign up</a></li>
-          </ul>
-        </div>
-
-        <div class="grid-itemLogin">
-
-          <form action="/users/login" method="POST">
-            <h1>Log in</h1>
-            <%- include('partials/messages') %>
-            <div class="form-group-togehter">
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-control"
-                  placeholder="Enter Email"
-                />
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  class="form-control"
-                  placeholder="Enter Password"
-                />
-              </div>
-              
-            <button type="submit" class="loginButton">Login</button>
-            </div>
-            <p class="lead mt-4">
-              No Account? <a href="/users/register">Register</a>
-            </p>
-          </form>
-         
-
-        </div>
-  
-        <div class="grid-item9">
-          <footer class="footer-distributed">
-            <div class="footer-left">
-              <h3>NordicViking</h3> 
-  
-              <p class="footer-links">
-                <a href="index.php">Hem</a>
-                ·
-                <a href="#">Regler</a>
-                ·
-                <a href="#">Om Oss</a>
-                ·
-                <a href="#">Q&A</a>
-                ·
-                <a href="#">Kontakta oss</a>
-              </p>
-  
-              <p class="footer-company-name">NordicViking &copy; 2021</p>
-            </div>
-  
-            <div class="footer-center">
-              <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>Crafoords väg 12</span> Stockholm, Sverige</p>
-              </div>
-  
-              <div>
-                <i class="fa fa-phone"></i>
-                <p>+46733589217</p>
-              </div>
-  
-              <div>
-                <i class="fa fa-envelope"></i>
-                <p>
-                  <a href="mailto:support@company.com"
-                    >viktorlilienberg@gmail.com</a
-                  >
-                </p>
-              </div>
-            </div>
-  
-            <div class="footer-right">
-              <p class="footer-company-about">
-                <span>Om företaget</span>
-                Ett Online Casino grundat av viktor liljenberg med rättvisa och
-                ärliga odds.
-              </p>
-  
-              <div class="footer-icons">
-                <a href="https://www.facebook.com"
-                  ><i class="fa fa-facebook">
-                    <img
-                      class="icon"
-                      src="/img/facebookLogga.gif"
-                      alt=""
-                      width="50px" /></i
-                ></a>
-                <a href="https://www.instagram.com"
-                  ><i class="fa fa-instagram">
-                    <img
-                      class="icon"
-                      src="/img/instaLogga.gif"
-                      alt=""
-                      width="50px" /></i
-                ></a>
-                <a href="https://www.linkedin.com"
-                  ><i class="fa fa-linkedin">
-                    <img
-                      class="icon"
-                      src="/img/linkedinLogga.gif"
-                      alt=""
-                      width="50px" /></i
-                ></a>
-                <a href="https://www.github.com"
-                  ><i class="fa fa-github">
-                    <img
-                      class="icon"
-                      src="/img/githubLogga (1).gif"
-                      alt=""
-                      width="50px" /></i
-                ></a>
-              </div>
-            </div>
-          </footer>
+          <a href="index.ejs"
+            ><img src="../img/VikingLogga.gif" alt="Logga"
+          /></a>
         </div>
       </div>
+      <div class="grid-itemNav">
+        <ul class="navList">
+          <li><a href="/">Home</a></li>
 
+          <li><a href="">Spela</a></li>
 
-</body>
+          <li><a href="">Om oss</a></li>
+
+          <li><a href="/users/login">Log in</a></li>
+
+          <li><a href="/users/register">Sign up</a></li>
+        </ul>
+      </div>
+
+      <div class="grid-itemLogin">
+        <form action="/users/login" method="POST">
+         <div class="h1form"> <h2>Log in</h2></div>
+          <%- include('partials/messages') %>
+          <div class="form-group-togehter">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter Email"
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Enter Password"
+            />
+            <p class="lead mt-4">
+              <h5>No Account?  <a href="/users/register">Register</a> </h5>
+            </p>
+
+          </div>
+         
+
+          <button type="submit" class="loginButton">Login</button>
+
+        </form>
+      </div>
+
+      <div class="grid-item9">
+        <footer class="footer-distributed">
+          <div class="footer-left">
+            <h3>NordicViking</h3>
+
+            <p class="footer-links">
+              <a href="index.php">Hem</a>
+              ·
+              <a href="#">Regler</a>
+              ·
+              <a href="#">Om Oss</a>
+              ·
+              <a href="#">Q&A</a>
+              ·
+              <a href="#">Kontakta oss</a>
+            </p>
+
+            <p class="footer-company-name">NordicViking &copy; 2021</p>
+          </div>
+
+          <div class="footer-center">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>Crafoords väg 12</span> Stockholm, Sverige</p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+46733589217</p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>
+                <a href="mailto:support@company.com"
+                  >viktorlilienberg@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <p class="footer-company-about">
+              <span>Om företaget</span>
+              Ett Online Casino grundat av viktor liljenberg med rättvisa och
+              ärliga odds.
+            </p>
+
+            <div class="footer-icons">
+              <a href="https://www.facebook.com"
+                ><i class="fa fa-facebook">
+                  <img
+                    class="icon"
+                    src="/img/facebookLogga.gif"
+                    alt=""
+                    width="50px" /></i
+              ></a>
+              <a href="https://www.instagram.com"
+                ><i class="fa fa-instagram">
+                  <img
+                    class="icon"
+                    src="/img/instaLogga.gif"
+                    alt=""
+                    width="50px" /></i
+              ></a>
+              <a href="https://www.linkedin.com"
+                ><i class="fa fa-linkedin">
+                  <img
+                    class="icon"
+                    src="/img/linkedinLogga.gif"
+                    alt=""
+                    width="50px" /></i
+              ></a>
+              <a href="https://www.github.com"
+                ><i class="fa fa-github">
+                  <img
+                    class="icon"
+                    src="/img/githubLogga (1).gif"
+                    alt=""
+                    width="50px" /></i
+              ></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>

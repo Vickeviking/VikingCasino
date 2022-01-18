@@ -12,4 +12,18 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
   })
 );
 
+//play
+router.get('/play', ensureAuthenticated, (req, res) =>
+  res.render('play'));
+
+  //konto
+router.get('/konto', ensureAuthenticated, (req, res) =>
+res.render('account'));
+
+//about page
+router.get('/about', (req, res) =>
+res.render('about'));
+
+
+
 module.exports = router;

@@ -47,6 +47,7 @@ body {
   text-align: center;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .navList a {

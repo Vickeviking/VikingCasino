@@ -24,6 +24,13 @@ res.render('account'));
 router.get('/about', (req, res) =>
 res.render('about'));
 
+//Black jack
+router.get('/blackJack', ensureAuthenticated, (req, res) =>
+res.render('blackJack', {
+  name: req.user.name
+})
+);
+
 
 
 module.exports = router;

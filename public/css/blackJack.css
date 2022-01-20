@@ -1,0 +1,73 @@
+.bodyBlack{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+   
+}
+ 
+p{
+ 
+    font-size: 4vw;
+ 
+}
+ 
+h1{
+color: goldenrod;
+font-size: 8vw;
+}
+ 
+#message-el {
+font-style: italic;
+ 
+}
+.flex{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.namn{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.startGameButton{
+    font-weight: bold;
+    font-size: 4vw;
+    color: #016f32;
+    width: 40vw;
+    background-color: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 0.15em;
+    margin-top: 0.15em;
+}
+ 
+.logoutButton{
+    font-weight: bold;
+    font-size: 2vw;
+    color: black;
+    width: 10vw;
+    background-color: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 0.15em;
+    margin-top: 0.15em;
+    margin-right: 2vw;
+}
+
+.logoutButton a
+{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+

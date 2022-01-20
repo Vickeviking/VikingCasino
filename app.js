@@ -68,3 +68,4 @@ app.use(express.static(__dirname + '/public'));
 const PORT = process.env.PORT || 5000;
  
 app.listen(PORT, console.log(`Server started on port ${PORT}`)) //vilken local server jag kör på
+

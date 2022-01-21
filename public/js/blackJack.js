@@ -56,7 +56,7 @@ function startGame() {
 function renderGame() {
   playerEl.textContent = player.name + ": $" + player.chips;
   cardsEl.textContent = "Cards: ";
-  dealerCardsEl.textContent = "DealerCards: " + firstDCard + " " + secondDCard;
+  dealerCardsEl.textContent = "DealerCards: " + firstDCard + " ";
 
   for (let i = 0; i < cards.length; i++) {
     cardsEl.textContent += cards[i] + " ";

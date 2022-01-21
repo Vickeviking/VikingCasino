@@ -48,6 +48,36 @@ align-items: center;
     margin-bottom: 0.15em;
     margin-top: 0.15em;
 }
+
+.newCardButton{
+    font-weight: bold;
+    font-size: 2vw;
+    color: #016f32;
+    width: 50%;
+    background-color: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 0.15em;
+    margin-top: 0.15em;
+    padding: 1em;
+}
+
+
+.stopButton{
+    font-weight: bold;
+    font-size: 4vw;
+    color: #016f32;
+    width: 50%;
+    background-color: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 0.15em;
+    margin-top: 0.15em;
+}
  
 .logoutButton{
     font-weight: bold;
@@ -58,7 +88,7 @@ align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
     border: none;
-    border-radius: 2px;
+    border-radius: 20px;
     margin-bottom: 0.15em;
     margin-top: 0.15em;
     margin-right: 2vw;
@@ -69,5 +99,15 @@ align-items: center;
     color: black;
     list-style: none;
     text-decoration: none;
+}
+
+.ihopp{
+    font-size: 1em;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 52.5vh;
+gap: 2em;
 }
 

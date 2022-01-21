@@ -13,6 +13,8 @@ let dead = false;
 let message = "";
 let clickMessage;
 let clickMessageEl = document.getElementById("clickMessage-el");
+let winMessage;
+let winMessageEl = document.getElementById("winMessage-el");
 let sumEl = document.querySelector("#sum-el");
 let messageEL = document.getElementById("message-el");
 let cardsEl = document.getElementById("cards-el");
@@ -29,12 +31,12 @@ clickMessageEl.textContent = "Start";
 
 function startGame() {
   if (stoppa == false) {
-    if (player.chips > 0) {
-      player.chips = player.chips - 5;
-    }
+    
+    winMessageEl.textContent = "";
+    dealerCardsEl.textContent = "DealerCards: " + dealerCards;
     skickaVidare();
   }
-
+}
   function skickaVidare() {
     cards = [];
     hasBlackJack = false;
@@ -43,15 +45,18 @@ function startGame() {
 
     let firstCard = getRandomCard();
     let secondCard = getRandomCard();
+   firstDCard = getRandomCard();
+   secondDCard = getRandomCard();
     cards = [firstCard, secondCard]; //ordered list of items
     sum = firstCard + secondCard;
     renderGame();
   }
-}
+
 
 function renderGame() {
   playerEl.textContent = player.name + ": $" + player.chips;
   cardsEl.textContent = "Cards: ";
+  dealerCardsEl.textContent = "DealerCards: " + firstDCard + " " + secondDCard;
 
   for (let i = 0; i < cards.length; i++) {
     cardsEl.textContent += cards[i] + " ";
@@ -65,9 +70,24 @@ function renderGame() {
     message = "You've got Black Jack!";
     hasBlackJack = true;
     isAlive = false;
+
+    winMessageEl.textContent = "Nice you won 20$"
+
+    player.chips = player.chips + 20;
+    
+playerEl.textContent = player.name + ": $" + player.chips;
+
   } else {
     message = "You're out of the game";
     isAlive = false;
+    if (player.chips > 0) {
+      player.chips = player.chips - 10;
+    }
+    
+    winMessageEl.textContent = "You lost 10$"
+    playerEl.textContent = player.name + ": $" + player.chips;
+
+
   }
   messageEL.textContent = message;
 }
@@ -92,8 +112,6 @@ function dealerGive() {
   dealerCards = [];
 
   if(cardSet == false){
-   firstDCard = getRandomCard();
-   secondDCard = getRandomCard();
   dealerSum = firstDCard + secondDCard;
 }
 console.log(dealerSum);
@@ -135,6 +153,68 @@ dealerSum = dealerSum + newDealerCard;
 function dealerDone()
 {
     console.log("färdig");
+    
+    console.log(dealerSum);
+    
+    console.log(sum);
+
+
+    if(dealerSum > sum && dealerSum < 22 ){
+
+      winMessageEl.textContent = "You lost 10$";
+      console.log("loss");
+      if (player.chips > 0) {
+        player.chips = player.chips - 10;
+      }
+    cardSet = false;
+    isAlive = false;
+    stoppa = false;
+    cards = [];
+    dealerCards = [];
+    playerEl.textContent = player.name + ": $" + player.chips;
+    }
+
+    if(dealerSum < sum && sum < 22)
+    {
+    winMessageEl.textContent = "Nice you won 10$"
+    console.log("win");
+    player.chips = player.chips + 10;
+    cardSet = false;
+    isAlive = false;
+    stoppa = false;
+    cards = [];
+    dealerCards = [];
+    playerEl.textContent = player.name + ": $" + player.chips;
+
+    }
+
+    if(dealerSum > 21 && sum < 22)
+    {
+    winMessageEl.textContent = "Nice you won 10$"
+    console.log("win");
+    player.chips = player.chips + 10;
+    cardSet = false;
+    isAlive = false;
+    stoppa = false;
+    cards = [];
+    dealerCards = [];
+    playerEl.textContent = player.name + ": $" + player.chips;
+
+    }
+
+    if(dealerSum === sum)
+    {
+    winMessageEl.textContent = "It's a draw"
+    console.log("win");
+    player.chips = player.chips + 10;
+    cardSet = false;
+    isAlive = false;
+    stoppa = false;
+    cards = [];
+    dealerCards = [];
+    playerEl.textContent = player.name + ": $" + player.chips;
+
+    }
 }
 
 

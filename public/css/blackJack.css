@@ -19,6 +19,7 @@ font-size: 4vw;
  
 #message-el {
 font-style: italic;
+color: goldenrod;
  
 }
 .flex{
@@ -39,7 +40,7 @@ align-items: center;
     font-weight: bold;
     font-size: 2vw;
     color: #016f32;
-    width: 30vw;
+    width: 23.5vw;
     background-color: goldenrod;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -52,12 +53,12 @@ align-items: center;
 
 .newCardButton{
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #016f32;
     width: 50%;
     background-color: goldenrod;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
     border: none;
     border-radius: 2px;
     margin-bottom: 0.15em;
@@ -68,7 +69,7 @@ align-items: center;
 
 .stopButton{
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 1vw;
     color: #016f32;
     width: 50%;
     background-color: goldenrod;
@@ -109,6 +110,6 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 width: 52.5vh;
-gap: 2em;
+gap: 1em;
 }
 

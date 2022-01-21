@@ -8,13 +8,13 @@
  
 p{
  
-    font-size: 4vw;
+    font-size: 2vw;
  
 }
  
 h1{
 color: goldenrod;
-font-size: 8vw;
+font-size: 4vw;
 }
  
 #message-el {
@@ -37,9 +37,9 @@ align-items: center;
 
 .startGameButton{
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 2vw;
     color: #016f32;
-    width: 40vw;
+    width: 30vw;
     background-color: goldenrod;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -47,6 +47,7 @@ align-items: center;
     border-radius: 2px;
     margin-bottom: 0.15em;
     margin-top: 0.15em;
+    padding: 0.5em;
 }
 
 .newCardButton{
@@ -61,7 +62,7 @@ align-items: center;
     border-radius: 2px;
     margin-bottom: 0.15em;
     margin-top: 0.15em;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 
@@ -71,8 +72,8 @@ align-items: center;
     color: #016f32;
     width: 50%;
     background-color: goldenrod;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
     border: none;
     border-radius: 2px;
     margin-bottom: 0.15em;
@@ -85,8 +86,8 @@ align-items: center;
     color: black;
     width: 10vw;
     background-color: goldenrod;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
     border: none;
     border-radius: 20px;
     margin-bottom: 0.15em;

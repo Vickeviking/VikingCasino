@@ -3,7 +3,7 @@
   grid-area: empty;
 }
 
-
+/*  <img src="../img/getRitch.jpg" alt="get ritch">*/
 
 .grid-itemRubrik {
   grid-area: rubrik;
@@ -24,11 +24,49 @@
   background-color:coral;
 }
 
+
+
 .grid-itemBildspel {
   grid-area: bildspel;
-  color: aliceblue;
-  background-color:coral;
+  overflow: hidden;
+  position: relative;
+
 }
+
+.grid-itemBildspel img{
+  width: 60vw;
+}
+
+.carousel-slide{
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+}
+
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+}
+
+#nextBtn{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 3em;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
 
 .grid-itemNews {
   grid-area: news;
@@ -87,6 +125,7 @@
     "globalChat"
     "news"
     "newsRubrik"
+    "coins"
     "preFooter"
     "footer";
 }

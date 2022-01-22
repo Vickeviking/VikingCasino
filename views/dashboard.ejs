@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/gridStyle.css" />
     <link rel="stylesheet" href="/css/style.css"/>
     <link rel="stylesheet" href="/css/footer.css" />
+    <script src="https://kit.fontawesome.com/1c12de10b6.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="grid-container">
@@ -25,11 +26,13 @@
   
       </div>
 
-      <div class="pcoins"> <h1> <%= name %> : <%= coins %>$ </h1></div>
+      <div class="pcoins"> <h1> <%= name %> : <%= coins %>$ </h1>
+      
+      </div>
 
       <div class="grid-itemNav">
         <ul class="navList">
-          <li><a href="/dashboard">Home</a></li>
+          <li><a href="/dashboard" >Home</a></li>
 
           <li><a href="/play">Play</a></li>
 
@@ -43,7 +46,32 @@
         </ul>
       </div>
       <div class="grid-itemGlobalChat">Global - chat</div>
-      <div class="grid-itemBildspel">Bildspel</div>
+      <div class="grid-itemBildspel">
+        
+        <i class="fas fa-arrow-right" id="nextBtn"></i>
+        
+        <i class="fas fa-arrow-left" id="prevBtn"></i>
+        
+        
+
+        <div class="carousel-slide">
+          
+          <img src="../img/getRitch.jpg" id="lastClone" alt="get ritch">
+
+          <img src="../img/poker.jpg" alt="poker">
+          
+          <img src="../img/roulett.jpg" alt="roulett">
+          
+          <img src="../img/blackjack.jpg" alt="blackjack">
+          
+        
+
+          <img src="../img/poker.jpg" id="firstClone" alt="poker">
+
+         
+
+        </div>
+      </div>
 
       <div class="grid-itemNews">
         <div class="grid-itemNewsRubrik">News</div>
@@ -140,5 +168,6 @@
         </footer>
       </div>
     </div>
+    <script src="js/bildSpel.js"></script>
   </body>
 </html>

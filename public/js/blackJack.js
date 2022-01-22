@@ -1,8 +1,13 @@
+//const { update } = require("../../models/User");
+
 //black jack code
 let player = {
   name: "",
   chips: 100,
 };
+
+
+//connect to mongus
 
 let cards = [];
 let dealerCards = [];
@@ -34,6 +39,7 @@ function startGame() {
     
     winMessageEl.textContent = "";
     dealerCardsEl.textContent = "DealerCards: " + dealerCards;
+    
     skickaVidare();
   }
 }
@@ -206,7 +212,6 @@ function dealerDone()
     {
     winMessageEl.textContent = "It's a draw"
     console.log("win");
-    player.chips = player.chips + 10;
     cardSet = false;
     isAlive = false;
     stoppa = false;
@@ -231,3 +236,5 @@ function getRandomCard() {
     return randomNumber;
   }
 }
+
+

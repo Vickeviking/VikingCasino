@@ -7,6 +7,7 @@ const User = require('../models/User');
 
 module.exports = function(passport){
 
+
     passport.use(
         new LocalStrategy({usernameField: 'email'}, (email, password, done) => {
             //match user
@@ -44,3 +45,9 @@ module.exports = function(passport){
       });
     
 }
+
+
+
+
+
+    

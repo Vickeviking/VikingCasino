@@ -83,14 +83,10 @@
   grid-template-areas:
     "rubrik"
     "nav"
-    "globalChat"
     "bildspel"
+    "globalChat"
     "news"
     "newsRubrik"
-    "item1"
-    "item2"
-    "item3"
-    "item4"
     "preFooter"
     "footer";
 }
@@ -99,10 +95,14 @@
   
   .grid-itemNav{
     font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   .navList{
     gap: 10px;
+    
   }
   
 }

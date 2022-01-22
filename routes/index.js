@@ -9,7 +9,7 @@ router.get('/', forwardAuthenticated, (req, res) => res.render('index'));
 router.get('/dashboard', ensureAuthenticated, (req, res) =>
   res.render('dashboard', {
     name: req.user.name,
-    coin: req.user.coin
+    coins: req.user.coins
   })
 );
 
@@ -28,9 +28,20 @@ res.render('about'));
 //Black jack
 router.get('/blackJack', ensureAuthenticated, (req, res) =>
 res.render('blackJack', {
-  name: req.user.name
+  name: req.user.name,
+  coins: req.user.coins
 })
 );
+
+//Store
+router.get('/store', ensureAuthenticated, (req, res) =>
+res.render('store', {
+  name: req.user.name,
+  coins: req.user.coins
+})
+);
+
+
 
 
 

@@ -8,7 +8,8 @@ router.get('/', forwardAuthenticated, (req, res) => res.render('index'));
 // Dashboard
 router.get('/dashboard', ensureAuthenticated, (req, res) =>
   res.render('dashboard', {
-    name: req.user.name
+    name: req.user.name,
+    coin: req.user.coin
   })
 );
 

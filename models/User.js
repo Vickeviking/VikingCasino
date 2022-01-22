@@ -18,6 +18,10 @@ date: {
     type: Date,
     default: Date.now
 },
+ coins: {
+    type: Number,
+    default: 100
+ },
 
 });
 

@@ -18,7 +18,11 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
 
 //play
 router.get('/play', ensureAuthenticated, (req, res) =>
-  res.render('play'));
+  res.render('play', {
+    name: req.user.name,
+    coins: req.user.coins
+  })
+);
 
   //konto
 router.get('/konto', ensureAuthenticated, (req, res) =>
@@ -44,7 +48,41 @@ res.render('store', {
 })
 );
 
-
+//rockpaper
+router.get('/rockPaper', ensureAuthenticated, (req, res) =>
+res.render('rockPaper', {
+  name: req.user.name,
+  coins: req.user.coins
+})
+);
+//roulette
+router.get('/roulette', ensureAuthenticated, (req, res) =>
+res.render('roulette', {
+  name: req.user.name,
+  coins: req.user.coins
+})
+);
+//tetris
+router.get('/tetris', ensureAuthenticated, (req, res) =>
+res.render('tetris', {
+  name: req.user.name,
+  coins: req.user.coins
+})
+);
+//1v1 gunfight
+router.get('/shooter', ensureAuthenticated, (req, res) =>
+res.render('shooter', {
+  name: req.user.name,
+  coins: req.user.coins
+})
+);
+//snake
+router.get('/snake', ensureAuthenticated, (req, res) =>
+res.render('snake', {
+  name: req.user.name,
+  coins: req.user.coins
+})
+);
 
 
 

@@ -1,0 +1,204 @@
+
+.empty{
+    grid-area: empty;
+  }
+  
+  /*  <img src="../img/getRitch.jpg" alt="get ritch">*/
+  
+  .grid-itemRubrik {
+    grid-area: rubrik;
+  }
+  
+  .pcoins{
+    grid-area: coins;
+  }
+  
+  .grid-itemNav {
+    grid-area: nav;
+    background-color: #1F2833;
+  }
+  
+.grid-itemPlay{
+ grid-area: play;
+ background-color: #1F2833;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ flex-direction: column;
+
+}
+
+.library{
+    padding-top: 1em;
+}
+
+.Games{
+display: flex;
+margin-top: 2em;
+margin-bottom: 2em;
+}
+
+.Games a{
+    text-decoration: none;
+    margin-bottom: 0.3em;
+    }
+
+.Games a:hover{
+    text-decoration: underline;
+    color: #ffc759;
+}
+
+.bJ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#9e2b25;
+    padding-bottom: 2em;
+}
+
+.roulette{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 2em;
+}
+
+.rockPaper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 2em;
+}
+
+.snake{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#9e2b25;
+    padding-bottom: 2em;
+}
+
+.tetris{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 2em;
+}
+
+.shooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9e2b25;
+    padding-bottom: 2em;
+}
+
+.Games img{
+    width: 70%;
+}
+
+.grid-itemPlay h1{
+    color: #ffc759;   
+   }
+
+
+  .grid-item8 {
+    grid-area: preFooter;
+    padding-bottom: 20px;
+  }
+  
+  .grid-item9 {
+    grid-area: footer;
+  }
+  
+  .grid-container {
+    min-height: 100vh;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "rubrik"
+      "coins"
+      "nav"
+      "bildspel"
+      "play"
+      /*"globalChat"*/
+      /*"news"*/
+      /*"newsRubrik"*/
+      "preFooter"
+      "footer";
+  }
+  @media (max-width: 500px) {
+  
+    
+    .grid-itemNav{
+      font-size: 1em;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .navList{
+      gap: 10px;
+      
+    }
+  
+    .grid-itemNews{
+      display: none;
+    }
+  
+    .grid-itemGlobalChat{
+      display: none;
+    }
+
+    
+  }
+  @media (min-width: 500px) {
+    
+    .grid-container {
+      min-height: 100vh;
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas:
+        "rubrik rubrik"
+        "nav nav"
+        "play play"
+        "footer footer";
+    }
+    .grid-itemNav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .grid-container {
+      min-height: 100vh;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-areas:
+        "empty rubrik coins"
+        "nav nav nav"
+        "play play play"
+        "footer footer footer";
+    }
+    .grid-itemNav ul {
+      flex-direction: row;
+    }
+  
+    .grid-itemRubrik{font-size: x-large;}
+  
+    .navList a {
+  
+      font-size: 2.5em;
+  
+    }
+  
+  }
+  

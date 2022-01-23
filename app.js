@@ -4,9 +4,23 @@ const mongoose = require('mongoose');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
+const app = express();
 
 // försöka slänga in en socket sevrerconst app = express()  //app är ett variabel namn för express
-const app = express()  //app är ett variabel namn för express
+
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
+
+io.on('connection', () => { 
+  console.log('a user connected');
+});
+
+const server = http.listen(3000, () => {
+  const { port } = 
+  server.address();
+  console.log('listening on port ${port}');
+});
+
 
 //Passport config
 
@@ -15,6 +29,7 @@ require('./config/passport')(passport);
 //DB CONFIG
 
 const db = require('./config/keys').MongoURI;
+const { socket } = require('server/router');
 
 //Connect to Mongo
 mongoose.connect(db,{ useNewUrlParser: true ,useUnifiedTopology: true})

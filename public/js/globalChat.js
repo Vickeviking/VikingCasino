@@ -6,7 +6,7 @@ let firstT = true;
 
 
 function fn1(){
-
+    console.log(firstT);
     if(firstT === true){
   
    console.log("körs");

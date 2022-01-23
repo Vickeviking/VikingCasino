@@ -42,8 +42,9 @@
 
 #message-container h2{
  
-  color: #1F2833;
+  color: white;
   font-size: 1em;
+  margin: 0.5em;
 
 }
 
@@ -95,37 +96,125 @@
 .grid-itemNews {
   grid-area: news;
   color: aliceblue;
-  background-color:coral;
+  background-color:#1f2833;
+}
+
+.grid-itemNews h2{
+  color: #ffc759;
 }
 
 .grid-itemNewsRubrik {
   grid-area: newsRubrik;
-  color: aliceblue;
-  background-color:coral;
+  background-color:black;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+.grid-itemNewsRubrik h2{
+  color: #ffc759;
 }
 
 .grid-item1 {
   grid-area: item1;
   color: aliceblue;
-  background-color:coral;
+  background-color:black;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+.grid-item1 img{
+  width: 100%;
+  height: 12vh;
+}
+
+.grid-item1 h3{
+  color: #ffc759;
+}
+
+
+.grid-item1 h3{
+  color: #ffc759;
 }
 
 .grid-item2 {
-  grid-area: item2;
+  grid-area: item1;
   color: aliceblue;
-  background-color:coral;
+  background-color:black;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+
+.grid-item2 img{
+  width: 100%;
+  height: 12vh;
+}
+
+.grid-item2 h3{
+  color: #ffc759;
+}
+
+
+.grid-item2 h3{
+  color: #ffc759;
 }
 
 .grid-item3 {
-  grid-area: item3;
+  
+  grid-area: item1;
   color: aliceblue;
-  background-color:coral;
+  background-color:black;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+
+.grid-item3 img{
+  width: 100%;
+  height: 12vh;
+}
+
+.grid-item3 h3{
+  color: #ffc759;
+}
+
+
+.grid-item3 h3{
+  color: #ffc759;
 }
 
 .grid-item4 {
-  grid-area: item4;
+  grid-area: item1;
   color: aliceblue;
-  background-color:coral;
+  background-color:black;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+
+.grid-item4 img{
+  width: 100%;
+  height: 12vh;
+}
+
+.grid-item4 h3{
+  color: #ffc759;
+}
+
+
+.grid-item4 h3{
+  color: #ffc759;
 }
 
 .grid-item8 {
@@ -165,6 +254,14 @@
   .navList{
     gap: 10px;
     
+  }
+
+  .grid-itemNews{
+    display: none;
+  }
+
+  .grid-itemGlobalChat{
+    display: none;
   }
   
 }

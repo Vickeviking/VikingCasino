@@ -42,3 +42,4 @@ User.findOneAndUpdate({email: 'viktorlilienberg@gmail.com' }, {coins: 200 }, (er
 
 module.exports = User; 
 
+//hej

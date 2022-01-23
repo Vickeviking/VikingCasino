@@ -5,6 +5,7 @@
 .grid-itemNav {
   grid-area: nav;
   background-color: #1f2833;
+  margin-bottom: 5em;
 }
 
 .grid-itemLogin {
@@ -30,6 +31,10 @@ input#password2.form-control {
   margin-top: 0.5em;
   margin-bottom: 1em;
 }
+.grid-item8{
+  grid-area: prefooter;
+  margin-top: 5em;
+}
 
 .grid-item9 {
   grid-area: footer;
@@ -43,6 +48,7 @@ input#password2.form-control {
     "rubrik"
     "nav"
     "login"
+    "prefooter"
     "footer";
 }
 
@@ -89,6 +95,7 @@ font-size: 1.5em;
       "rubrik rubrik"
       "nav nav"
       "login login"
+      "prefooter prefooter"
       "footer footer";
   }
   .grid-itemNav ul {
@@ -105,6 +112,7 @@ font-size: 1.5em;
       "rubrik rubrik rubrik"
       "nav nav nav"
       "login login login"
+      "prefooter prefooter prefooter"
       "footer footer footer";
   }
   .grid-itemNav ul {

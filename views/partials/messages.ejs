@@ -1,6 +1,8 @@
+
+
 <% if(typeof errors != 'undefined') { %>
     <% errors.forEach(function(error){ %>
-        <div class="errormsg">
+        <div  role="alert" class="errormsg">
             <%= error.msg %>  
           </div>
  
@@ -9,14 +11,15 @@
 <% } %>
 
 <% if(success_msg != '') {%>
-    <div class="successmsg">
+    <div  class="successmsg">
         <%= success_msg %>  
       </div>
 <%} %>
 
 
 <% if(error_msg != '') {%>
-    <div class="successmsg">
+    <div  role="alert" class="successmsg">
+        
         <%= error_msg %>  
       </div>
 <%} %>

@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    color: goldenrod;
+    font-size: 5em;
+}
+
+.flex{display: flex;
+text-align: center;
+align-items: center;
+}
+
+body{
+    background-color: black;
+}
+
+button{
+    background-color: brown;
+    height: 3em;
+    
+    margin-left: 1em;
+}
+
+button a{
+    color: goldenrod;
+    font-size: 2em;
+    text-decoration: none;
+
+}
+
+button a:hover{
+    text-decoration: underline;
+}

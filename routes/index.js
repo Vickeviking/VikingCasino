@@ -4,6 +4,7 @@ const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 const req = require('express/lib/request');
 const res = require('express/lib/response');
 
+
 // Welcome Page
 router.get('/', forwardAuthenticated, (req, res) => res.render('index'));
 

@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/1c12de10b6.js"
       crossorigin="anonymous"
     ></script>
+
   </head>
   <body>
     <div class="grid-container">
@@ -45,7 +46,19 @@
           <li><a href="/users/logout">Log out</a></li>
         </ul>
       </div>
-      <div class="grid-itemGlobalChat">Global - chat</div>
+      <div class="grid-itemGlobalChat">
+        <div>
+          <h1>Global chat</h1>
+        </div>
+      
+        <div id="message-container"></div>
+        <form id="send-container">
+          <input type="text" id="message-input">
+          <button type="submit" id="send-button"> send </button>
+        </form>
+
+
+      </div>
       <div class="grid-itemBildspel">
         <i class="fas fa-arrow-right" id="nextBtn"></i>
 
@@ -74,7 +87,9 @@
         <div class="grid-item4">4</div>
       </div>
 
-      <div class="grid-item8">info footer</div>
+      <div class="grid-item8">
+        <img class="hej" src="../img/brabra.jpg" alt="">
+      </div>
       <div class="grid-item9">
         <footer class="footer-distributed">
           <div class="footer-left">
@@ -125,7 +140,7 @@
 
             <div class="footer-icons">
               <a href="https://www.facebook.com"
-                ><i class="fa fa-facebook">
+                ><i class="fa fa-facebookk">
                   <img
                     class="icon"
                     src="img/facebookLogga.gif"
@@ -133,7 +148,7 @@
                     width="50px" /></i
               ></a>
               <a href="https://www.instagram.com"
-                ><i class="fa fa-instagram">
+                ><i class="fa fa-instagramk">
                   <img
                     class="icon"
                     src="img/instaLogga.gif"
@@ -141,7 +156,7 @@
                     width="50px" /></i
               ></a>
               <a href="https://www.linkedin.com"
-                ><i class="fa fa-linkedin">
+                ><i class="fa fa-linkedink">
                   <img
                     class="icon"
                     src="img/linkedinLogga.gif"
@@ -149,7 +164,7 @@
                     width="50px" /></i
               ></a>
               <a href="https://www.github.com"
-                ><i class="fa fa-github">
+                ><i class="fa fa-githubk">
                   <img
                     class="icon"
                     src="img/githubLogga (1).gif"
@@ -162,5 +177,6 @@
       </div>
     </div>
     <script src="js/bildSpel.js"></script>
+    <script src="js/javascript.js"></script>
   </body>
 </html>

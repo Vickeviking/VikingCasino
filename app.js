@@ -5,6 +5,10 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
 
+// försöka slänga in en socket sevrer
+
+
+
 const app = express()  //app är ett variabel namn för express
 
 //Passport config

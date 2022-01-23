@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="/css/gridStyle.css" />
     <link rel="stylesheet" href="/css/style.css"/>
     <link rel="stylesheet" href="/css/footer.css" />
+    <script
+    src="https://kit.fontawesome.com/1c12de10b6.js"
+    crossorigin="anonymous"
+  ></script>
   </head>
   <body>
     <div class="grid-container">
@@ -33,7 +37,25 @@
         </ul>
       </div>
       <div class="grid-itemGlobalChat">Global - chat</div>
-      <div class="grid-itemBildspel">Bildspel</div>
+      <div class="grid-itemBildspel">
+        <i class="fas fa-arrow-right" id="nextBtn"></i>
+
+        <i class="fas fa-arrow-left" id="prevBtn"></i>
+
+        <div class="carousel-slide">
+          <img src="../img/getRitch.jpg" id="lastClone" alt="get ritch" />
+
+          <img src="../img/poker.jpg" alt="poker" />
+
+          <img src="../img/roulett.jpg" alt="roulett" />
+
+          <img src="../img/blackjack.jpg" alt="blackjack" />
+
+          <img src="../img/getRitch.jpg" alt="get ritch" />
+
+          <img src="../img/poker.jpg" id="firstClone" alt="poker" />
+        </div>
+      </div>
 
       <div class="grid-itemNews">
         <div class="grid-itemNewsRubrik">News</div>
@@ -43,7 +65,9 @@
         <div class="grid-item4">4</div>
       </div>
 
-      <div class="grid-item8">info footer</div>
+      <div class="grid-item8">
+        <img class="hej" src="../img/brabra.jpg" alt="">
+      </div>
       <div class="grid-item9">
         <footer class="footer-distributed">
           <div class="footer-left">
@@ -130,5 +154,7 @@
         </footer>
       </div>
     </div>
+    
+    <script src="js/bildSpel.js"></script>
   </body>
 </html>

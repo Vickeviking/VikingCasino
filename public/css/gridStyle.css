@@ -20,9 +20,33 @@
 
 .grid-itemGlobalChat {
   grid-area: globalChat;
-  color: aliceblue;
-  background-color:coral;
+  background-color:#1f2833;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.grid-itemGlobalChat h1{
+  color: #ffc759;
+}
+
+#message-container{
+  background-color: aliceblue;
+  height: 80%;
+  width: 80%;
+  margin-bottom: 5%;
+  border-radius: 5%;
+
+}
+
+#message-container h2{
+ 
+  color: #1F2833;
+  font-size: 1em;
+
+}
+
 
 
 
@@ -106,6 +130,7 @@
 
 .grid-item8 {
   grid-area: preFooter;
+  padding-bottom: 20px;
 }
 
 .grid-item9 {
@@ -118,12 +143,12 @@
   gap: 20px;
   grid-template-areas:
     "rubrik"
+    "coins"
     "nav"
     "bildspel"
-    "globalChat"
-    "news"
-    "newsRubrik"
-    "coins"
+    /*"globalChat"*/
+    /*"news"*/
+    /*"newsRubrik"*/
     "preFooter"
     "footer";
 }

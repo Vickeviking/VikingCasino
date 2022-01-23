@@ -30,5 +30,15 @@ date: {
 const User = mongoose.model('User', UserSchema);
 
 
+
+User.findOneAndUpdate({email: 'viktorlilienberg@gmail.com' }, {coins: 200 }, (error, data) => {
+  if(error){
+    console.log(error);
+  }else{
+    console.log(data);
+  }
+}) // i User.js
+
+
 module.exports = User; 
 

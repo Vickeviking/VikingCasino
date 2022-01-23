@@ -12,7 +12,9 @@
       src="https://kit.fontawesome.com/1c12de10b6.js"
       crossorigin="anonymous"
     ></script>
-
+    
+    <script defer src="js/bildSpel.js"></script>
+    <script defer src="js/javascript.js"></script>
   </head>
   <body>
     <div class="grid-container">
@@ -21,11 +23,9 @@
         <div class="Wrapp">
           <div class="rubrik">
             <h1>NordicViking</h1>
-            <p>Welcome <%= name %></p>
+            <p id="namnet">Welcome <%= name %></p>
           </div>
-          <a href="index.ejs"
-            ><img src="../img/VikingLogga.gif" alt="Logga"
-          /></a>
+           <img src="../img/VikingLogga.gif" alt="Logga"/>
         </div>
       </div>
 
@@ -51,10 +51,16 @@
           <h1>Global chat</h1>
         </div>
       
-        <div id="message-container"></div>
+        <div id="message-container">
+          <h2 id="msg-1"></h2>
+            <h2 id="msg-2"></h2>
+              <h2 id="msg-3"></h2>
+
+
+        </div>
         <form id="send-container">
-          <input type="text" id="message-input">
-          <button type="submit" id="send-button"> send </button>
+          <input placeholder="say hello or sum shit!" type="text" id="message-input">
+          <button type='button' onclick="fn1()"  id="send-button"> send </button>
         </form>
 
 
@@ -176,7 +182,7 @@
         </footer>
       </div>
     </div>
-    <script src="js/bildSpel.js"></script>
-    <script src="js/javascript.js"></script>
+    
+    <script src="js/globalChat.js"></script>
   </body>
 </html>

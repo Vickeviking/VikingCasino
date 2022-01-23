@@ -1,14 +1,11 @@
-const express = require('express') 
+const express = require('express'); 
 const expressLayouts = require('express-ejs-layouts')
 const mongoose = require('mongoose');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
 
-// försöka slänga in en socket sevrer
-
-
-
+// försöka slänga in en socket sevrerconst app = express()  //app är ett variabel namn för express
 const app = express()  //app är ett variabel namn för express
 
 //Passport config

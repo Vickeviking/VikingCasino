@@ -1,0 +1,73 @@
+.lallish{
+    text-align: center;
+    margin: 1em;
+    background-color: #ffc759;
+    padding: 0.5em;
+    color: black;
+}
+
+.Buy{
+    font-size: 1.5em;
+    padding-left: 00.5em;
+    
+    padding-right: 00.5em;
+    margin-top: 0.25em;
+}
+
+.storeFlex{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 3em;
+    margin-bottom: 3em;
+    background-blend-mode: luminosity;
+
+}
+
+.storeFlex img{
+    width: 20em;
+}
+
+.grid-itemPlay{
+    color:#ffc759;
+}
+
+
+  
+  .grid-itemNav {
+    grid-area: nav;
+    background-color: #1F2833;
+  }
+  
+
+  
+  .grid-container {
+    min-height: 100vh;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "rubrik"
+      "coins"
+      "nav"
+      "bildspel"
+      "play"
+      /*"globalChat"*/
+      /*"news"*/
+      /*"newsRubrik"*/
+      "preFooter"
+      "footer";
+  }
+    .navList a {
+  
+      font-size: 2.5em;
+  
+    }
+  
+  p{
+      color: white;
+      font-size: 1.5em;
+      width: 8em;
+      margin-top: 0.2em;
+      margin-left: 2.5em;
+  }
+  

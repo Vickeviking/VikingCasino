@@ -1,24 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
-    <link rel="stylesheet" href="./css/upcoming.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/store.css">
+    <script
+      src="https://kit.fontawesome.com/1c12de10b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/javascript.js"></script>
+   
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="empty"></div>
+      <div class="grid-itemRubrik">
+        <div class="Wrapp">
+          <div class="rubrik">
+            <h1>NordicViking</h1>
+          </div>
+           <img src="../img/VikingLogga.gif" alt="Logga"/>
+        </div>
+      </div>
 
-    <div class="flex">
+      <div class="grid-itemNav">
+        <ul class="navList">
+          <li><a href="/dashboard">Home</a></li>
 
-        <h1>Hello, our store will launch soon!</h1>
+          <li><a href="/play">Play</a></li>
 
-        <button type="button"> <a href="/dashboard">Take me back</a> </button>
+          <li><a href="/about">About us</a></li>
+
+          <li><a href="/users/show">Account</a></li>
+
+          <li><a href="/store">Store</a></li>
+
+          <li><a href="/users/logout">Log out</a></li>
+        </ul>
+      </div>
+      
+
+<div class="grid-itemPlay">
+
+<h1 class="lallish"> <%= avatar %>s Balance: <%= coins%>$</h1>
+
+<div class="storeFlex">
+
+<div class="packageFlex1">
+    <h1>Loki pack 4.99$</h1>
+    <img src="../img/LokiPack.jpg" alt="">
+    <p>500 chips to use in our casino, and 5 free spins in our roulette!</p>
+    <button onclick="Buy500()" class="Buy" type="button"> Buy</button>
+</div>
+
+
+<div class="packageFlex">
+    <h1>Thor pack 14.99$</h1>
+    <img src="../img/Thor.jpg" alt="">
+    <p>2000 chips to use in our casino, and 5 free chats with babeRexa! </p>
+    <button onclick="Buy2000()" class="Buy" type="button"> Buy</button>
+</div>
+
+
+<div class="packageFlex">
+    <h1>Odin pack 499.99$</h1>
+    <img src="../img/OdinPack.jpg" alt="">
+    <p>5000 chips, MVP role (includes free chats in 18+ chat) + 50 free spins</p>
+    <button onclick="Buy5000()" class="Buy" type="button"> Buy</button>
+</div>
+
+<div></div>
+
+<div></div>
+
+</div>
+
+<script>
+function Buy500(){
+  console.log("hello");
+
+  let text;
+  person = prompt("Please enter your correct Email to buy Loki Pack for 4.99$", "");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = person;
+  } 
+ 
+   alertThem(text);
+  
+}
+
+
+function Buy5000(){
+  console.log("hello");
+
+  let text;
+  person = prompt("Please enter your correct Email to buy Odin Pack for 499.99$", "");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = person;
+  } 
+ 
+   alertThem(text);
+  
+}
+
+
+function Buy2000(){
+  console.log("hello");
+
+  let text;
+  person = prompt("Please enter your correct Email to buy Thor Pack for 14.99$", "");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = person;
+  } 
+ 
+   alertThem();
+  
+}
+
+
+function alertThem(){
+  
+  alert("Hi Lmao our stab don't know how to transfer over the chips yet so you basicly got scammed ");
+}
+
+</script>
+
+
+
+
+</div>
+
+      <div class="grid-item9">
+        <footer class="footer-distributed">
+          <div class="footer-left">
+            <h3>NordicViking</h3>
+
+            <p class="footer-links">
+              <a href="index.ejs">Hem</a>
+              ·
+              <a href="#">Regler</a>
+              ·
+              <a href="#">Om Oss</a>
+              ·
+              <a href="#">Q&A</a>
+              ·
+              <a href="#">Kontakta oss</a>
+            </p>
+
+            <p class="footer-company-name">NordicViking &copy; 2021</p>
+          </div>
+
+          <div class="footer-center">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>Crafoords väg 12</span> Stockholm, Sverige</p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+46733589217</p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>
+                <a href="mailto:support@company.com"
+                  >viktorlilienberg@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <p class="footer-company-about">
+              <span>Om företaget</span>
+              Ett Online Casino grundat av viktor liljenberg med rättvisa och
+              ärliga odds.
+            </p>
+
+            <div class="footer-icons">
+              <a href="https://www.facebook.com"
+                ><i class="fa fa-facebookk">
+                  <img
+                    class="icon"
+                    src="../img/facebookLogga.gif"
+                    alt=""
+                    width="50px" /></i
+              ></a>
+              <a href="https://www.instagram.com"
+                ><i class="fa fa-instagramk">
+                  <img
+                    class="icon"
+                    src="../img/instaLogga.gif"
+                    alt=""
+                    width="50px" /></i
+              ></a>
+              <a href="https://www.linkedin.com"
+                ><i class="fa fa-linkedink">
+                  <img
+                    class="icon"
+                    src="../img/linkedinLogga.gif"
+                    alt=""
+                    width="50px" /></i
+              ></a>
+              <a href="https://www.github.com"
+                ><i class="fa fa-githubk">
+                  <img
+                    class="icon"
+                    src="../img/githubLogga (1).gif"
+                    alt=""
+                    width="50px" /></i
+              ></a>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
     
-    
-</body>
+    <script src="js/globalChat.js"></script>
+    <script src="js/buy.js"></script>
+  </body>
 </html>
 
 

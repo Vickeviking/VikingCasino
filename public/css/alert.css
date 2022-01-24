@@ -1,16 +1,21 @@
 /* The alert message box */
 .alert {
-    padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
     background-color: orange; /* Red */
-    color: white;
+    color: black;
+    font-weight: bold;
     margin-bottom: 15px;
     font-size: 1em;
+    width: 60%;
   }
   
   /* The close button */
   .closebtn {
     margin-left: 15px;
-    color: white;
+    color: black;
     font-weight: bold;
     float: right;
     font-size: 22px;

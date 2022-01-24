@@ -33,8 +33,9 @@
 
 #message-container{
   background-color: aliceblue;
+  opacity: 90%;
   height: 80%;
-  width: 80%;
+  width: 80%;  
   margin-bottom: 5%;
   border-radius: 5%;
 
@@ -42,7 +43,7 @@
 
 #message-container h2{
  
-  color:black;
+  color: black;
   font-size: 1em;
   margin: 0.5em;
 

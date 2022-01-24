@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    color: goldenrod;
+    font-size: 4em;
+}
+
+.flex{display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+gap: 1em;
+}
+
+body{
+    background-color: black;
+}
+
+button{
+    background-color: brown;
+    height: 3em;
+    
+    margin-left: 1em;
+}
+
+button a{
+    color: goldenrod;
+    font-size: 2em;
+    text-decoration: none;
+
+}
+
+button a:hover{
+    text-decoration: underline;
+}
+
+p{
+    
+    text-align: center;
+    color: goldenrod;
+    font-size: 3em;
+    width: 80%;
+}
+
+.par{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}

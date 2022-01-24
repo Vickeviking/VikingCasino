@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/gridPlay.css">
+    <link rel="stylesheet" href="/css/profile.css">
     <script
       src="https://kit.fontawesome.com/1c12de10b6.js"
       crossorigin="anonymous"
     ></script>
-    
-    <script defer src="js/bildSpel.js"></script>
     <script defer src="js/javascript.js"></script>
   </head>
   <body>
@@ -38,7 +37,7 @@
 
           <li><a href="/about">About us</a></li>
 
-          <li><a href="/konto">Account</a></li>
+          <li><a href="/users/show">Account</a></li>
 
           <li><a href="/store">Store</a></li>
 
@@ -49,13 +48,40 @@
 
 <div class="grid-itemPlay">
 
-<h1>User profile:</h1>
-
-<div class="vne">
-  <h1><%= firstName + " " + lastName%></h1>
-</div>
+<h1 class="galet">User profile: <%= firstName + " " + lastName%></h1>
 
 
+<table id="customers">
+  <tr>
+    <th>Company:</th>
+    <th>Contact</th>
+  </tr>
+  <tr>
+    <td>Username:</td>
+    <td><%= avatar%></td>
+  </tr>
+  <tr>
+    <td>firstname:</td>
+    <td><%= firstName%></td>
+  </tr>
+  <tr>
+    <td>lastName:</td>
+    <td><%= lastName%></td>
+  </tr>
+  <tr>
+    <td>email:</td>
+    <td><%= email%></td>
+  </tr>
+  <tr>
+    <td>presumed sexoffender?</td>
+    <td>YES</td>
+  </tr>
+  <tr>
+    <td>Sexuality choosen:</td>
+    <td>"HårdBög"</td>
+  </tr>
+ 
+</table>
 
 
 
@@ -122,7 +148,7 @@
                 ><i class="fa fa-facebookk">
                   <img
                     class="icon"
-                    src="img/facebookLogga.gif"
+                    src="../img/facebookLogga.gif"
                     alt=""
                     width="50px" /></i
               ></a>
@@ -130,7 +156,7 @@
                 ><i class="fa fa-instagramk">
                   <img
                     class="icon"
-                    src="img/instaLogga.gif"
+                    src="../img/instaLogga.gif"
                     alt=""
                     width="50px" /></i
               ></a>
@@ -138,7 +164,7 @@
                 ><i class="fa fa-linkedink">
                   <img
                     class="icon"
-                    src="img/linkedinLogga.gif"
+                    src="../img/linkedinLogga.gif"
                     alt=""
                     width="50px" /></i
               ></a>
@@ -146,7 +172,7 @@
                 ><i class="fa fa-githubk">
                   <img
                     class="icon"
-                    src="img/githubLogga (1).gif"
+                    src="../img/githubLogga (1).gif"
                     alt=""
                     width="50px" /></i
               ></a>

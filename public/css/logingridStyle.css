@@ -15,22 +15,45 @@
 input#email.form-control {
   margin-top: 0.5em;
   margin-bottom: 1em;
+  font-size: 1.5em;
 }
+
 
 input#password.form-control {
   margin-top: 0.5em;
   margin-bottom: 1em;
+  
+  font-size: 1.5em;
 }
 
-input#name.form-control {
+input#avatar.form-control {
   margin-top: 0.5em;
   margin-bottom: 1em;
+  
+  font-size: 1.5em;
 }
 
 input#password2.form-control {
   margin-top: 0.5em;
   margin-bottom: 1em;
+  
+  font-size: 1.5em;
 }
+
+input#firstName.form-control {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  
+  font-size: 1.5em;
+}
+
+input#lastName.form-control {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  
+  font-size: 1.5em;
+}
+
 .grid-item8{
   grid-area: prefooter;
   margin-top: 5em;

@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema({
 
-  name: {
+  avatar: {
 type: String,
 required: true
 },
@@ -25,6 +25,8 @@ date: {
     default: 100
  },
 
+ firstName: String, 
+ lastName: String,
 });
 
 const User = mongoose.model('User', UserSchema);
@@ -37,7 +39,7 @@ User.findOneAndUpdate({email: 'viktorlilienberg@gmail.com' }, {coins: 200 }, (er
   }else{
     console.log(data);
   }
-}) // i User.js
+})  
 
 
 module.exports = User; 

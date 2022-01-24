@@ -11,7 +11,7 @@ router.get('/', forwardAuthenticated, (req, res) => res.render('index'));
 // Dashboard
 router.get('/dashboard', ensureAuthenticated, (req, res) =>
   res.render('dashboard', {
-    name: req.user.name,
+    avatar: req.user.avatar,
     coins: req.user.coins
   })
 );
@@ -19,7 +19,7 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
 //play
 router.get('/play', ensureAuthenticated, (req, res) =>
   res.render('play', {
-    name: req.user.name,
+    avatar: req.user.avatar,
     coins: req.user.coins
   })
 );
@@ -35,7 +35,7 @@ res.render('about'));
 //Black jack
 router.get('/blackJack', ensureAuthenticated, (req, res) =>
 res.render('blackJack', {
-  name: req.user.name,
+  avatar: req.user.avatar,
   coins: req.user.coins
 })
 );

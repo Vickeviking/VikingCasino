@@ -1,8 +1,8 @@
-
+<link rel="stylesheet" href="./css/alert.css">
 
 <% if(typeof errors != 'undefined') { %>
     <% errors.forEach(function(error){ %>
-        <div  role="alert" class="errormsg">
+        <div  class="alert" class="errormsg">
             <%= error.msg %>  
           </div>
  
@@ -18,8 +18,7 @@
 
 
 <% if(error_msg != '') {%>
-    <div  role="alert" class="successmsg">
-        
+    <div   class="alert" class="successmsg">
         <%= error_msg %>  
       </div>
 <%} %>

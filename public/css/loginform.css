@@ -1,6 +1,6 @@
 form {
   background-color: cadetblue;
-  max-width: 30%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,13 +8,17 @@ form {
 }
 
 .loginButton {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  padding: 0.5em;
 }
 
 .h1form {
-  background-color: #deb887;
-  width: 100%;
-
+  background-color: #1f2833;
+  font-size: 2em;
+  color: white;
+  width: 15em;
+height: 5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,5 +52,17 @@ form {
   align-items: center;
 }
 h5 {
-  font-size: small;
+  font-size: 1.5em;
+}
+
+h5 a {
+  text-decoration: none;
+}
+
+h5 a:hover{
+  text-decoration: underline;
+}
+
+.labelT{
+  font-size: 2em;
 }

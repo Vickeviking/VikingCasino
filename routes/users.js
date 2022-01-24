@@ -15,10 +15,10 @@ router.get('/register', forwardAuthenticated, (req, res) => res.render('register
 
 // Register
 router.post('/register', (req, res) => {
-  const { name, email, password, password2 } = req.body;
+  const { avatar, email, password, password2, firstName, lastName } = req.body;
   let errors = [];
 
-  if (!name || !email || !password || !password2) {
+  if (!avatar || !email || !password || !password2 || !firstName || !lastName) {
     errors.push({ msg: 'Please enter all fields' });
   }
 
@@ -33,10 +33,12 @@ router.post('/register', (req, res) => {
   if (errors.length > 0) {
     res.render('register', {
       errors,
-      name,
+      avatar,
       email,
       password,
-      password2
+      password2,
+      firstName,
+      lastName
     });
   } else {
     User.findOne({ email: email }).then(user => {
@@ -44,16 +46,20 @@ router.post('/register', (req, res) => {
         errors.push({ msg: 'Email already exists' });
         res.render('register', {
           errors,
-          name,
+          avatar,
           email,
           password,
-          password2
+          password2,
+          firstName,
+          lastName
         });
       } else {
         const newUser = new User({
-          name,
+          avatar,
           email,
-          password
+          password,
+          firstName,
+          lastName
         });
 
         bcrypt.genSalt(10, (err, salt) => {
@@ -93,5 +99,16 @@ router.get('/logout', (req, res) => {
   res.redirect('/users/login');
 });
 
+// Users Profiles
+
+router.get("/users/:id", function(req, res){
+ User.findById(req.params.id, function(err, foundUser){
+   if(err){
+     req.flash('error', 'Something went wrong');
+     res.redirect('/dashboard')
+   }
+   res.render('users/show', {user: foundUser});
+ });
+});
 
 module.exports = router;

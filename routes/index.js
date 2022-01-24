@@ -43,7 +43,7 @@ res.render('blackJack', {
 //Store
 router.get('/store', ensureAuthenticated, (req, res) =>
 res.render('store', {
-  name: req.user.name,
+  avatar: req.user.avatar,
   coins: req.user.coins
 })
 );
@@ -51,35 +51,48 @@ res.render('store', {
 //rockpaper
 router.get('/rockPaper', ensureAuthenticated, (req, res) =>
 res.render('rockPaper', {
-  name: req.user.name,
+  avatar: req.user.avatar,
   coins: req.user.coins
 })
 );
 //roulette
 router.get('/roulette', ensureAuthenticated, (req, res) =>
 res.render('roulette', {
-  name: req.user.name,
+  avatar: req.user.avatar,
   coins: req.user.coins
 })
 );
 //tetris
 router.get('/tetris', ensureAuthenticated, (req, res) =>
 res.render('tetris', {
-  name: req.user.name,
+  avatar: req.user.avatar,
   coins: req.user.coins
 })
 );
 //1v1 gunfight
 router.get('/shooter', ensureAuthenticated, (req, res) =>
 res.render('shooter', {
-  name: req.user.name,
+  avatar: req.user.avatar,
   coins: req.user.coins
 })
 );
 //snake
 router.get('/snake', ensureAuthenticated, (req, res) =>
 res.render('snake', {
-  name: req.user.name,
+  avatar: req.user.avatar,
+  coins: req.user.coins
+})
+);
+
+//user profile
+
+router.get('/users/show', ensureAuthenticated, (req, res) =>
+res.render('users/show', {
+  avatar: req.user.avatar,
+  coins: req.user.coins,
+  email: req.user.email,
+  lastName: req.user.lastName,
+  firstName: req.user.firstName,
   coins: req.user.coins
 })
 );

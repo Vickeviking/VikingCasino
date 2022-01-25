@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/tetris.css">
 </head>
 <body>
-    <div class="subway">
         <div class="Wrapp">
             <div class="rubrik">
               <h1>NordicViking</h1>
@@ -16,35 +15,27 @@
              <img src="../img/VikingLogga.gif" alt="Logga"/>
           </div>
           <button type="button"> <a href="/play">Take me back</a> </button>
-    </div>
-    <div class="ost">
-        <p id="namnet">Welcome to tetris! first to 100 points wins the game!</p>
-      </div>
+          
+          </div>
+
+           
+           
+        </div>
     
 
-    <div class="playingField">
 
-        <template id="player-template">
+         <template id="player-template">
 
             <div class="player">
                 <div class="score"></div>
                 <canvas class="tetris" width="240" height="400"></canvas>
             </div>
         
-        </template>
+         </template>
     
-    </div>
+    
 
-    <div class="ost1">
-
-        <div class="instructions">
-            <p>
-                Spelare ett styr med 'a', 's', 'd' och roterar med 'q' & 'e',
-                Spelare två styr med 'vänster-pil', 'nedåt-pil', 'höger-pil' och roterar med 'k' & 'L'
-            </p>
-        </div>
-
-    </div>
+   
 
     <script src="../js/tetris/tetris.js"></script>
     <script src="../js/tetris/connection-manager.js"></script>

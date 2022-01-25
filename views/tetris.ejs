@@ -4,19 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/upcoming.css">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="../css/tetris.css">
 </head>
 <body>
-
-    <div class="flex">
-
-        <h1>Hello, tetris is coming soon!</h1>
-
-        <button type="button"> <a href="/play">Take me back</a> </button>
+    <div class="subway">
+        <div class="Wrapp">
+            <div class="rubrik">
+              <h1>NordicViking</h1>
+            </div>
+             <img src="../img/VikingLogga.gif" alt="Logga"/>
+          </div>
+          <button type="button"> <a href="/play">Take me back</a> </button>
     </div>
+    <div class="ost">
+        <p id="namnet">Welcome to tetris! first to 100 points wins the game!</p>
+      </div>
     
 
-<img src="./img/tetris.jpg" alt="">
+    <div class="playingField">
+        <div class="player">
+            <div class="score"></div>
+            <canvas class="tetris" width="240" height="400"></canvas>
+        </div>
+    
+        <div class="player">
+            <div class="score"></div>
+            <canvas class="tetris" width="240" height="400"></canvas>
+        </div>
+    
+        <script src="./js/tetris/arena.js"></script>
+        <script src="./js/tetris/player.js"></script>
+        <script src="./js/tetris/tetris.js"></script>
+        <script src="./js/tetris/main.js"></script>
+    </div>
+
+    <div class="ost1">
+
+        <div class="instructions">
+            <p>
+                Spelare ett styr med 'a', 's', 'd' och roterar med 'q' & 'e',
+                Spelare två styr med 'vänster-pil', 'nedåt-pil', 'höger-pil' och roterar med 'k' & 'L'
+            </p>
+        </div>
+
+    </div>
+
 </body>
 </html>
+
+

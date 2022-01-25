@@ -23,20 +23,16 @@
     
 
     <div class="playingField">
-        <div class="player">
-            <div class="score"></div>
-            <canvas class="tetris" width="240" height="400"></canvas>
-        </div>
+
+        <template id="player-template">
+
+            <div class="player">
+                <div class="score"></div>
+                <canvas class="tetris" width="240" height="400"></canvas>
+            </div>
+        
+        </template>
     
-        <div class="player">
-            <div class="score"></div>
-            <canvas class="tetris" width="240" height="400"></canvas>
-        </div>
-    
-        <script src="./js/tetris/arena.js"></script>
-        <script src="./js/tetris/player.js"></script>
-        <script src="./js/tetris/tetris.js"></script>
-        <script src="./js/tetris/main.js"></script>
     </div>
 
     <div class="ost1">
@@ -50,6 +46,13 @@
 
     </div>
 
+    <script src="../js/tetris/tetris.js"></script>
+    <script src="../js/tetris/connection-manager.js"></script>
+    <script src="../js/tetris/arena.js"></script>
+    <script src="../js/tetris/event.js"></script>
+    <script src="../js/tetris/player.js"></script>
+    <script src="../js/tetris/tetrisManager.js"></script>
+    <script src="../js/tetris/main.js"></script>
 </body>
 </html>
 

@@ -69,6 +69,14 @@ res.render('tetris', {
   coins: req.user.coins
 })
 );
+//tetris
+router.get('/roulette', ensureAuthenticated, (req, res) =>
+res.render('roulette', {
+  avatar: req.user.avatar,
+  coins: req.user.coins
+})
+);
+
 //1v1 gunfight
 router.get('/shooter', ensureAuthenticated, (req, res) =>
 res.render('shooter', {
